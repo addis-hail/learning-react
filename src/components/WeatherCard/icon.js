@@ -7,7 +7,7 @@ const Icon = (props) => {
         width: 40%
     `
     return ( 
-        <Icon className="icon" src="./img/mostly cloudy.jpg" alt="Weather Icon" />
+        <Icon className="icon" src="./img/mostly cloudy.png" alt="Weather Icon" />
      );
 }
  
