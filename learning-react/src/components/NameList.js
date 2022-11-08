@@ -24,7 +24,7 @@ function NameList() {
 
     ]
     // const nameList = names.map(name => <h2>{name}</h2>)
-    const personList = persons.map(person => <Person person={person} />)
+    const personList = persons.map(person => <Person key={person.name} person={person} />)
     // <h2>
     //     I am {person.name}. I am {person.age} years old. I know {person.skill}
     // </h2>
