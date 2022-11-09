@@ -1,7 +1,7 @@
 import React from 'react'
 import Person from './Person'
 function NameList() {
-    // const names = ['Bruce', 'Clark', 'Diana']
+    const names = ['Bruce', 'Clark', 'Diana', 'Bruce']
     const persons = [
         {
             id: 1,
@@ -24,7 +24,7 @@ function NameList() {
 
     ]
     // const nameList = names.map(name => <h2>{name}</h2>)
-    const personList = persons.map(person => <Person key={person.name} person={person} />)
+    const nameList = names.map((name, index) =>  <h2 key={index}>{index} {name}</h2>)
     // <h2>
     //     I am {person.name}. I am {person.age} years old. I know {person.skill}
     // </h2>
@@ -37,7 +37,7 @@ function NameList() {
             names.map(name => <h2>{name}</h2>)
         } */}
         {
-            personList
+            nameList
         }
     </div>
   )
